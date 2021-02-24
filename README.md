@@ -1,2 +1,2 @@
 # algo
-This is solution algorithm problems
+This is solution of algorithm problems
