@@ -29,7 +29,7 @@ def bfs(start, level):
 
         for step in dir:
             next_floor = cur_floor + step
-            if possible_path(next_floor):
+            if possible_path(next_floor):   
                 if not visited[next_floor]:
                     queue.append((next_floor, level))
                     visited[next_floor] = True
