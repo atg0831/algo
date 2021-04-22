@@ -45,7 +45,7 @@ def bfs(posx,posy,steps,chance):
                     elif maze[nextx][nexty]==0:
                         queue.append((nextx,nexty,steps+1,chance))
                         visited[nextx][nexty]=True
-    return -1
+    return -1 
     
 
 ans=bfs(hx-1,hy-1,0,1)

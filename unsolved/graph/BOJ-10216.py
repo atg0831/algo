@@ -56,7 +56,7 @@ for _ in range(int(input())):
                     union(i, j)
                     ans -= 1
 
-    print(ans)
+    print(ans)  
 
 # union-find 기본
 input = sys.stdin.readline
@@ -86,7 +86,7 @@ for _ in range(int(input())):
     ypos = [0 for i in range(n)]
     xpos = [0 for i in range(n)]
     radius = [0 for i in range(n)]
-
+ 
     for i in range(n):
         y, x, r = map(int, input().split())
         ypos[i] = y
