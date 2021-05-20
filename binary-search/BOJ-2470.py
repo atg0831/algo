@@ -14,7 +14,7 @@ while start < end:
     if abs(sum_) < abs(answer):
         answer = sum_
         posx = start
-        posy = end
+        posy = endg
         if answer == 0:
             break
 
