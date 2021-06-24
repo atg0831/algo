@@ -3,7 +3,6 @@ houses = [int(input()) for _ in range(N)]
 
 houses.sort()
 
-print(houses)
 start = 1
 end = houses[-1] - houses[0]
 answer = 0 
