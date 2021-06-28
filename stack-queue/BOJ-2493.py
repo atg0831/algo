@@ -23,8 +23,18 @@ for i, tower in enumerate(towers):
             accepted.append([i, tower])
             answer.append(0)
             break
-        
+
 print(' '.join(map(str, answer)))
+
+
+
+
+
+
+
+
+
+
 
 # accpeted = []
 # for i in range(N-1, -1, -1):
