@@ -1,2 +1,4 @@
 #ignore unsolved problems
 unsolved/
+problems/
+scf.py

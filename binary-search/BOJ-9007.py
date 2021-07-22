@@ -9,6 +9,7 @@ for _ in range(T):
     class1 = []
     class2 = []
 
+    # [60, 75, 48, 56], [60, 68, 48, 56] ....[40,63,54,75](총 n의 4승)
     # i=0, i=2 두가지 경우([(weights[0], weights[1]), (weights[2], weights[3])])
     for i in range(0,4,2):
         for w in weights[i]:
@@ -20,6 +21,7 @@ for _ in range(T):
     
     class1.sort()
     class2.sort()
+
     answer = -1
     temp = []
     for w in class1:
@@ -32,14 +34,14 @@ for _ in range(T):
         end = len(class2) - 1
 
         while start <= end:
-            mid = (start + end) //2
+            mid = (start + end)//2
 
             if class2[mid] == left_weight:
                 answer = k
                 break
 
             elif class2[mid] > left_weight:
-                end = mid -1
+                end = mid - 1
                 total1 = class2[mid] + w
                 diff1 = abs(k-total1)
                 
@@ -48,10 +50,8 @@ for _ in range(T):
                 total2 = w + class2[mid]
                 diff2 = abs(k-total2)
             
-        
         if answer == k:
             break
-        
         
         if diff1 < diff2:
             temp.append([diff1,total1])    
