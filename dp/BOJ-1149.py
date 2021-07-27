@@ -10,3 +10,27 @@ for i in range(1, n):
 
 
 print(min(cost[n-1]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
